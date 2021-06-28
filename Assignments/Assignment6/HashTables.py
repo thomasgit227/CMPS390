@@ -10,7 +10,7 @@ class HashTable:
         
     def hash(self, input):
         val = ((ord(input[0]) - 97) * 26**2) + ((ord(input[1]) - 97) * 26**1) + ((ord(input[2]) - 97) * 26**0);
-        return int(val * (self.len / 17575));
+        return int(val * (self.len / 17575)); #value of 'zzz', AKA the end
 
     def placeInTable(self, input):
         hashCode = self.hash(input);
